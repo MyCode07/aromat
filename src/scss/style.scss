@@ -977,13 +977,13 @@ body {
 
     &__slider {
         &-pagination {
-            position: absolute;
-            visibility: hidden;
-            opacity: 0;
+            // position: absolute;
+            // visibility: hidden;
+            // opacity: 0;
             & :not(:last-child) {
                 margin-right: 10px;
             }
-            @media (max-width: 1150px) {
+            // @media (max-width: 1150px) {
                 position: static;
                 visibility: visible;
                 opacity: 1;
@@ -991,7 +991,7 @@ body {
                 align-items: center;
                 justify-content: center;
                 z-index: 5;
-            }
+            // }
             span {
                 width: 10px;
                 height: 10px;
@@ -1004,9 +1004,8 @@ body {
         z-index: 2;
         background-color: #fff;
         position: relative;
-        @media (max-width: 1150px) {
-            padding-bottom: 20px;
-        }
+        padding-bottom: 20px;
+        
     }
 
     // .feedback__item
@@ -1079,9 +1078,9 @@ body {
         position: absolute;
         @include adaptive-value("width", 823, 392, 1);
         @include adaptive-value("height", 741, 327, 1);
-        @include adaptive-value("bottom", -116, 60, 1);
+        @include adaptive-value("bottom", -96, 60, 1);
         @include adaptive-value("right", -20, 185, 1);
-        z-index: 0;
+        z-index: -1;
 
         img {
             position: absolute;
@@ -1097,7 +1096,7 @@ body {
     &__drops {
         position: absolute;
 
-        @include adaptive-value("bottom", -200, -98, 1);
+        @include adaptive-value("bottom", -180, -98, 1);
         @include adaptive-value("right", -157, -95, 1);
 
         @include adaptive-value("width", 538, 283, 1);

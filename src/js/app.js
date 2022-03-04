@@ -11,7 +11,7 @@ if (document.querySelector('.feedback__slider')) {
     new Swiper('.feedback__slider', {
         slidesPerView: 'auto',
         loop: true,
-        spaceBetween: 21,
+        spaceBetween: 19,
         grabCursor: true,
         pagination: {
             el: '.feedback__slider-pagination',
@@ -20,3 +20,5 @@ if (document.querySelector('.feedback__slider')) {
 
     })
 }
+
+
