@@ -333,8 +333,12 @@ body {
   margin-right: 10px;
 }
 
-.header__contacts-item#header__facebook {
+.header__contacts-item#header__whatsapp {
   margin-right: 10px;
+}
+
+.header__contacts-item#header__whatsapp svg {
+  fill: #caa980;
 }
 
 .page {
@@ -630,6 +634,7 @@ body {
   top: 0;
   z-index: -1;
   width: 588px;
+  max-width: unset !important;
   height: 444px;
 }
 
@@ -852,7 +857,7 @@ body {
   background-image: inherit;
 }
 
-.item-grid__text {
+.item-grid__text p {
   font-weight: 300;
   font-size: 18px;
   line-height: 178%;
@@ -1083,8 +1088,12 @@ body {
   fill: #caa980;
 }
 
-.footer__contacts-item#footer__facebook {
+.footer__contacts-item#footer__whatsapp {
   margin-right: 10px;
+}
+
+.footer__contacts-item#footer__whatsapp svg {
+  fill: #caa980;
 }
 
 @media (min-width: 993px) {
@@ -1128,7 +1137,7 @@ body {
     margin-right: calc(6px + 4 * ((100vw - 360px) / 1560));
   }
 
-  .header__contacts-item#header__facebook {
+  .header__contacts-item#header__whatsapp {
     margin-right: calc(6px + 4 * ((100vw - 360px) / 1560));
   }
 
@@ -1396,7 +1405,7 @@ body {
     height: calc(2px + 1 * ((100vw - 360px) / 1560));
   }
 
-  .item-grid__text {
+  .item-grid__text p {
     font-size: calc(16px + 2 * ((100vw - 360px) / 1560));
   }
 
@@ -1654,22 +1663,26 @@ body {
   .about__text img {
     height: 300px;
   }
-}
-
-@media (max-width: 475px) {
-  .about__text img {
-    height: 330px;
-  }
 
   .footer__body {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer__copyright {
     margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 475px) {
+  .about__text img {
+    height: 330px;
   }
 }
 
@@ -1709,7 +1722,7 @@ body {
     margin-right: 6px;
   }
 
-  .header__contacts-item#header__facebook {
+  .header__contacts-item#header__whatsapp {
     margin-right: 6px;
   }
 
@@ -1981,7 +1994,7 @@ body {
     height: 2px;
   }
 
-  .item-grid__text {
+  .item-grid__text p {
     font-size: 16px;
   }
 
@@ -2090,6 +2103,10 @@ body {
     fill: #fff;
   }
 
+  .header__contacts-item:hover#header__whatsapp svg {
+    fill: #fff;
+  }
+
   .first__request-aimate:hover svg {
     -webkit-transform: rotate(182deg);
         -ms-transform: rotate(182deg);
@@ -2114,6 +2131,10 @@ body {
   }
 
   .footer__contacts-item:hover svg .center-path {
+    fill: #fff;
+  }
+
+  .footer__contacts-item:hover#footer__whatsapp svg {
     fill: #fff;
   }
 }

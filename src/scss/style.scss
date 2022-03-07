@@ -227,6 +227,11 @@ body {
                         border-radius: 50%;
                         background-color: #caa980;
                     }
+                    &#header__whatsapp {
+                        svg {
+                            fill: #fff;
+                        }
+                    }
                 }
             }
             svg {
@@ -246,7 +251,10 @@ body {
                 margin-right: 10px;
                 @include adaptive-value("margin-right", 10, 6, 1);
             }
-            &#header__facebook {
+            &#header__whatsapp {
+                svg {
+                    fill: #caa980;
+                }
                 @include adaptive-value("margin-right", 10, 6, 1);
             }
             &#header__instagram {
@@ -631,6 +639,7 @@ body {
             top: 0;
             z-index: -1;
             width: 588px;
+            max-width: unset !important;
             height: 444px;
             @media (max-width: 992px) {
                 height: 210px;
@@ -931,10 +940,12 @@ body {
     // .item-grid__text
 
     &__text {
-        font-weight: 300;
-        @include adaptive-value("font-size", 18, 16, 1);
-        line-height: 178%;
-        color: #000000;
+        p {
+            font-weight: 300;
+            @include adaptive-value("font-size", 18, 16, 1);
+            line-height: 178%;
+            color: #000000;
+        }
     }
 }
 
@@ -984,13 +995,13 @@ body {
                 margin-right: 10px;
             }
             // @media (max-width: 1150px) {
-                position: static;
-                visibility: visible;
-                opacity: 1;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                z-index: 5;
+            position: static;
+            visibility: visible;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 5;
             // }
             span {
                 width: 10px;
@@ -1005,7 +1016,6 @@ body {
         background-color: #fff;
         position: relative;
         padding-bottom: 20px;
-        
     }
 
     // .feedback__item
@@ -1133,8 +1143,9 @@ body {
         align-items: center;
         justify-content: space-between;
         padding: 20px 0;
-        @media (max-width: 475px) {
+        @media (max-width: 540px) {
             flex-direction: column;
+            align-items: center;
         }
     }
 
@@ -1145,8 +1156,9 @@ body {
         @include adaptive-value("font-size", 18, 14, 1);
         line-height: 130%;
         color: #000000;
-        @media (max-width: 475px) {
+        @media (max-width: 540px) {
             margin-bottom: 10px;
+            text-align: center;
         }
         span {
             font-weight: inherit;
@@ -1177,6 +1189,11 @@ body {
                         border-radius: 50%;
                         background-color: #caa980;
                     }
+                    &#footer__whatsapp {
+                        svg {
+                            fill: #fff;
+                        }
+                    }
                 }
             }
             svg {
@@ -1189,8 +1206,11 @@ body {
                 fill: #caa980;
             }
 
-            &#footer__facebook {
+            &#footer__whatsapp {
                 margin-right: 10px;
+                svg {
+                    fill: #caa980;
+                }
             }
             &#footer__insagram {
             }
