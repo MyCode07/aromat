@@ -67,8 +67,8 @@ body {
     // .header__logo
 
     &__logo {
-        width: 127px;
-        height: 31px;
+        @include adaptive-value("width", 150, 100, 1);
+        @include adaptive-value("height", 105, 70, 1);
         @include adaptive-value("margin-right", 179, 15, 1);
         position: relative;
         img {
@@ -228,8 +228,11 @@ body {
                         background-color: #caa980;
                     }
                     &#header__whatsapp {
+                        
                         svg {
-                            fill: #fff;
+                            fill: #caa980;
+                            stroke: #fff;
+                            
                         }
                     }
                 }
@@ -252,8 +255,12 @@ body {
                 @include adaptive-value("margin-right", 10, 6, 1);
             }
             &#header__whatsapp {
+                width: 43px;
+                height: 43px;
                 svg {
-                    fill: #caa980;
+                    stroke: #caa980;
+                    stroke-width: 6px;
+                    fill: #fff;
                 }
                 @include adaptive-value("margin-right", 10, 6, 1);
             }
@@ -1191,7 +1198,8 @@ body {
                     }
                     &#footer__whatsapp {
                         svg {
-                            fill: #fff;
+                            fill: #caa980;
+                            stroke: #fff;
                         }
                     }
                 }
@@ -1208,8 +1216,12 @@ body {
 
             &#footer__whatsapp {
                 margin-right: 10px;
+                width: 43px;
+                height: 43px;
                 svg {
-                    fill: #caa980;
+                    stroke: #caa980;
+                    stroke-width: 6px;
+                    fill: #fff;
                 }
             }
             &#footer__insagram {
